@@ -18,7 +18,7 @@ namespace SeleniumTestBuddy
         [SetUp]
         public void Setup()
         {
-             driver = new ChromeDriver(Path.GetFullPath(@"C:\chromedriver_win32"));
+             driver = new ChromeDriver();
             driver.Navigate().GoToUrl("https://stackoverflow.com/");
 
         }

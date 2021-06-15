@@ -504,6 +504,12 @@
           "lib/netstandard2.0/WebDriver.dll": {}
         }
       },
+      "Selenium.WebDriver.ChromeDriver/91.0.4472.10100": {
+        "type": "package",
+        "build": {
+          "build/Selenium.WebDriver.ChromeDriver.targets": {}
+        }
+      },
       "System.AppContext/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -1853,6 +1859,24 @@
         "lib/netstandard2.0/WebDriver.xml",
         "selenium.webdriver.3.141.0.nupkg.sha512",
         "selenium.webdriver.nuspec"
+      ]
+    },
+    "Selenium.WebDriver.ChromeDriver/91.0.4472.10100": {
+      "sha512": "RalhItuJ6BZdD9HHVUHdpgDP/NQAUrr1yEAHWet+Ww33wbcuei0A2sF4+9duKaLQuZO3lcid7pKe2+km3sOGBQ==",
+      "type": "package",
+      "path": "selenium.webdriver.chromedriver/91.0.4472.10100",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/DefinePropertiesChromeDriver.targets",
+        "build/Selenium.WebDriver.ChromeDriver.targets",
+        "driver/linux64/chromedriver",
+        "driver/mac64/chromedriver",
+        "driver/win32/chromedriver.exe",
+        "nupkg-icon.png",
+        "selenium.webdriver.chromedriver.91.0.4472.10100.nupkg.sha512",
+        "selenium.webdriver.chromedriver.nuspec"
       ]
     },
     "System.AppContext/4.1.0": {
@@ -4080,6 +4104,7 @@
       "NUnit3TestAdapter >= 3.16.1",
       "Noksa.WebDriver.ScreenshotsExtensions >= 0.1.5.3",
       "Selenium.WebDriver >= 3.141.0",
+      "Selenium.WebDriver.ChromeDriver >= 91.0.4472.10100",
       "System.Drawing.Common >= 5.0.2"
     ]
   },
@@ -4146,6 +4171,10 @@
           "Selenium.WebDriver": {
             "target": "Package",
             "version": "[3.141.0, )"
+          },
+          "Selenium.WebDriver.ChromeDriver": {
+            "target": "Package",
+            "version": "[91.0.4472.10100, )"
           },
           "System.Drawing.Common": {
             "target": "Package",
