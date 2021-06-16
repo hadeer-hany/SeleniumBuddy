@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.Extensions;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -13,11 +14,14 @@ namespace SeleniumTestBuddy
     
     public class Tests
     {
-        public IWebDriver driver;
+        public ChromeDriver driver;
         [SetUp]
         public void Setup()
         {
-             driver = new OpenQA.Selenium.Chrome.ChromeDriver();
+            ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.BinaryLocation = Path.GetFullPath(@"C:\chromedriver_win32");
+            //driver = new ChromeDriver(chromeOptions);
+            driver = new ChromeDriver(chromeOptions.BinaryLocation);
             driver.Navigate().GoToUrl("https://stackoverflow.com/");
 
         }
