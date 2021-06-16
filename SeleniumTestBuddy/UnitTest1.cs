@@ -9,20 +9,22 @@ using WDSE;
 using WDSE.Decorators;
 using WDSE.ScreenshotMaker;
 using System.IO;
+using OpenQA.Selenium.Remote;
+using System;
 
 namespace SeleniumTestBuddy
 {
     
     public class Tests
     {
-        public ChromeDriver driver;
+        public IWebDriver driver;
         [SetUp]
         public void Setup()
         {
-            string x = Path.GetFullPath(@"../../../" + "/Drivers");
-            //string withoutexe = Path.GetFileNameWithoutExtension(x);
+            RemoteWebDriver driver = new RemoteWebDriver(new Uri("http://selenium-ch:4444/wd/hub"), new ChromeOptions().ToCapabilities());
+           // driver = IWebDriver.Chrome(@"C:\Users\USER_NAME\Desktop\FOLDER\chromedriver"); 
 
-            driver = new ChromeDriver(x) ;
+           // driver = new ChromeDriver(( )) ;
             driver.Navigate().GoToUrl("https://stackoverflow.com/");
 
         }
