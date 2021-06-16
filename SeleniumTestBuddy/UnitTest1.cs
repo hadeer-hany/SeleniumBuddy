@@ -22,7 +22,7 @@ namespace SeleniumTestBuddy
             string x = Path.GetFullPath(@"../../../" + "/Drivers");
             //string withoutexe = Path.GetFileNameWithoutExtension(x);
 
-            driver = new ChromeDriver(Path.GetFileNameWithoutExtension(x)) ;
+            driver = new ChromeDriver(x) ;
             driver.Navigate().GoToUrl("https://stackoverflow.com/");
 
         }
