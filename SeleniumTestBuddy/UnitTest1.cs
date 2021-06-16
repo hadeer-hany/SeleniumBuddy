@@ -17,11 +17,12 @@ namespace SeleniumTestBuddy
     
     public class Tests
     {
-        public IWebDriver driver;
-        [SetUp]
+        //public IWebDriver driver;
+        RemoteWebDriver driver;
+       [SetUp]
         public void Setup()
         {
-            RemoteWebDriver driver = new RemoteWebDriver(new Uri("http://selenium-ch:4444/wd/hub"), new ChromeOptions().ToCapabilities());
+             driver = new RemoteWebDriver(new Uri("http://selenium-ch:4444/wd/hub"), new ChromeOptions().ToCapabilities());
            // driver = IWebDriver.Chrome(@"C:\Users\USER_NAME\Desktop\FOLDER\chromedriver"); 
 
            // driver = new ChromeDriver(( )) ;
