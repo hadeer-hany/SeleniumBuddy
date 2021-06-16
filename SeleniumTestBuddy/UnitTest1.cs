@@ -5,7 +5,6 @@ using OpenQA.Selenium.Support.Extensions;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
-using System.Reflection;
 using WDSE;
 using WDSE.Decorators;
 using WDSE.ScreenshotMaker;
@@ -19,11 +18,8 @@ namespace SeleniumTestBuddy
         [SetUp]
         public void Setup()
         {
-            // ChromeOptions chromeOptions = new ChromeOptions();
-            //chromeOptions.BinaryLocation= @"C:\Users\Hadeer\source\repos\SeleniumTestBuddy";
-            //string path = @"../../../" + "/Drivers";
-            // driver = new ChromeDriver(path);
-             driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
+
+            driver = new ChromeDriver(Path.GetFullPath(@"../../../"+"/Drivers"));
             driver.Navigate().GoToUrl("https://stackoverflow.com/");
 
         }
