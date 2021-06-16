@@ -8,6 +8,7 @@ using System.IO;
 using WDSE;
 using WDSE.Decorators;
 using WDSE.ScreenshotMaker;
+using System.IO;
 
 namespace SeleniumTestBuddy
 {
@@ -18,8 +19,10 @@ namespace SeleniumTestBuddy
         [SetUp]
         public void Setup()
         {
+            string x = Path.GetFullPath(@"../../../" + "/Drivers");
+            //string withoutexe = Path.GetFileNameWithoutExtension(x);
 
-            driver = new ChromeDriver(Path.GetFullPath(@"../../../"+"/Drivers"));
+            driver = new ChromeDriver(Path.GetFileNameWithoutExtension(x)) ;
             driver.Navigate().GoToUrl("https://stackoverflow.com/");
 
         }
