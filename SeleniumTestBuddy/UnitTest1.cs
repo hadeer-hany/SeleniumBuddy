@@ -18,9 +18,9 @@ namespace SeleniumTestBuddy
         [SetUp]
         public void Setup()
         {
-            ChromeOptions chromeOptions = new ChromeOptions();
+           // ChromeOptions chromeOptions = new ChromeOptions();
             //chromeOptions.BinaryLocation= @"C:\Users\Hadeer\source\repos\SeleniumTestBuddy";
-            driver = new ChromeDriver(Path.GetFullPath(@"chromedriver_win32"));
+            driver = new ChromeDriver();
             driver.Navigate().GoToUrl("https://stackoverflow.com/");
 
         }
