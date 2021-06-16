@@ -20,7 +20,7 @@ namespace SeleniumTestBuddy
         {
            // ChromeOptions chromeOptions = new ChromeOptions();
             //chromeOptions.BinaryLocation= @"C:\Users\Hadeer\source\repos\SeleniumTestBuddy";
-            driver = new ChromeDriver(@"C:\Users\Hadeer\source\repos\SeleniumTestBuddy\SeleniumTestBuddy\Drivers\");
+            driver = new ChromeDriver(Path.GetFullPath(@"../../../"+"/Drivers"));
             driver.Navigate().GoToUrl("https://stackoverflow.com/");
 
         }
