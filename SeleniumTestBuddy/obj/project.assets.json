@@ -480,6 +480,12 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Selenium.Chrome.WebDriver/85.0.0": {
+        "type": "package",
+        "build": {
+          "build/Selenium.Chrome.WebDriver.targets": {}
+        }
+      },
       "Selenium.Support/3.8.0": {
         "type": "package",
         "dependencies": {
@@ -1821,6 +1827,19 @@
         "lib/netstandard1.0/_._",
         "runtime.native.system.4.3.0.nupkg.sha512",
         "runtime.native.system.nuspec"
+      ]
+    },
+    "Selenium.Chrome.WebDriver/85.0.0": {
+      "sha512": "wRg7it2bBMyYtOsarTy0bWtS2fCZI08KGTef2kH381DYpGP+wX8j6f/7ABv1nmrUj5CCVmTeDeYeXS5g00JXSw==",
+      "type": "package",
+      "path": "selenium.chrome.webdriver/85.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Selenium.Chrome.WebDriver.targets",
+        "driver/chromedriver.exe",
+        "selenium.chrome.webdriver.85.0.0.nupkg.sha512",
+        "selenium.chrome.webdriver.nuspec"
       ]
     },
     "Selenium.Support/3.8.0": {
@@ -4103,6 +4122,7 @@
       "NUnit >= 3.13.2",
       "NUnit3TestAdapter >= 3.16.1",
       "Noksa.WebDriver.ScreenshotsExtensions >= 0.1.5.3",
+      "Selenium.Chrome.WebDriver >= 85.0.0",
       "Selenium.WebDriver >= 3.141.0",
       "Selenium.WebDriver.ChromeDriver >= 91.0.4472.10100",
       "System.Drawing.Common >= 5.0.2"
@@ -4167,6 +4187,10 @@
           "Noksa.WebDriver.ScreenshotsExtensions": {
             "target": "Package",
             "version": "[0.1.5.3, )"
+          },
+          "Selenium.Chrome.WebDriver": {
+            "target": "Package",
+            "version": "[85.0.0, )"
           },
           "Selenium.WebDriver": {
             "target": "Package",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "B2UoUxVmct6OnpaEQhauxUUosEGe/77BrYq8+t4Kon8OshPQoh4AcfLRErDKsvAM15DZfLrfze90By+OM3ETHQ==",
+  "dgSpecHash": "ByY0Zeu+44+dnyht9dQ406Z/Vgng5/+29w0t141CkPk/vdO3BnwoPYDmB6oaJLDjPQZ4Dyx3FgxUfK2d4COtlw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hadeer\\source\\repos\\SeleniumTestBuddy\\SeleniumTestBuddy\\SeleniumTestBuddy.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "C:\\Users\\Hadeer\\.nuget\\packages\\nunit\\3.13.2\\nunit.3.13.2.nupkg.sha512",
     "C:\\Users\\Hadeer\\.nuget\\packages\\nunit3testadapter\\3.16.1\\nunit3testadapter.3.16.1.nupkg.sha512",
     "C:\\Users\\Hadeer\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
+    "C:\\Users\\Hadeer\\.nuget\\packages\\selenium.chrome.webdriver\\85.0.0\\selenium.chrome.webdriver.85.0.0.nupkg.sha512",
     "C:\\Users\\Hadeer\\.nuget\\packages\\selenium.support\\3.8.0\\selenium.support.3.8.0.nupkg.sha512",
     "C:\\Users\\Hadeer\\.nuget\\packages\\selenium.webdriver\\3.141.0\\selenium.webdriver.3.141.0.nupkg.sha512",
     "C:\\Users\\Hadeer\\.nuget\\packages\\selenium.webdriver.chromedriver\\91.0.4472.10100\\selenium.webdriver.chromedriver.91.0.4472.10100.nupkg.sha512",
