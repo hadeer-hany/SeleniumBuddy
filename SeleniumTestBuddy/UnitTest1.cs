@@ -36,20 +36,20 @@ namespace SeleniumTestBuddy
             //Creating Chrome driver instance:
           
 
-            // Use the VerticalCombineDecorator to capture entire page:
-            var vcs = new VerticalCombineDecorator(new ScreenshotMaker());
-            var screen = driver.TakeScreenshot(vcs);
+            //// Use the VerticalCombineDecorator to capture entire page:
+            //var vcs = new VerticalCombineDecorator(new ScreenshotMaker());
+            //var screen = driver.TakeScreenshot(vcs);
 
 
-            //Coverting a byte array to an image:
-            using (Image image = Image.FromStream(new MemoryStream(screen)))
-            {
-                var a = image.Size;
-                image.Save("SeleniumScreenShot.png", ImageFormat.Jpeg);  // Or Png
-            }
+            ////Coverting a byte array to an image:
+            //using (Image image = Image.FromStream(new MemoryStream(screen)))
+            //{
+            //    var a = image.Size;
+            //    image.Save("SeleniumScreenShot.png", ImageFormat.Jpeg);  // Or Png
+            //}
 
 
-            //Close Chrome instance:
+            ////Close Chrome instance:
             driver.Close();
             Assert.Pass();
         }
